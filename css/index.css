@@ -135,12 +135,32 @@ body {
     box-shadow: 0 0 20px rgba(123, 228, 149, 0.3);
 }
 
+.emailAdress {
+    font-size: 20px;
+}
+
 .close {
     color: var(--text-color);
-    float: right;
-    font-size: 28px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
     font-weight: bold;
     cursor: pointer;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close::after {
+    content: "\00d7";
+    display: block;
+    transform: translateY(-2px);
 }
 
 .close:hover,
