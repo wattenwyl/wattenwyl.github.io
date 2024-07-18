@@ -26,3 +26,7 @@ This website serves as a temporary placeholder for an unused domain. It informs 
 - Confetti animation: [canvas-confetti](https://github.com/catdad/canvas-confetti)
 - Font: Roboto from [Google Fonts](https://fonts.google.com/specimen/Roboto)
 - Hosted on [GitHub Pages](https://pages.github.com/)
+
+## Contact
+
+[kontakt-wattenwyl@outlook.com](mailto:kontakt-wattenwyl@outlook.com)
