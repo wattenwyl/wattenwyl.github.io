@@ -3,46 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Info</title>
+    <meta name="robots" content="noindex, nofollow">
+    <title>Wattenwyl – persönliche Platzhalterseite</title>
+    <meta name="description" content="Eine persönliche Platzhalterseite. Aktuell ist kein konkretes Vorhaben geplant.">
     <link rel="icon" href="Favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <div class="container">
+        <div class="theme-control" role="group" aria-labelledby="theme-control-label">
+            <span id="theme-control-label" class="theme-control-label">Ansicht</span>
+            <span>2016</span>
+            <input id="theme-toggle" type="checkbox" role="switch" aria-label="2026-Look" checked>
+            <span>2026</span>
+        </div>
         <header>
-            <h1 class="title">Hallo Welt</h1>
+            <p class="eyebrow"><span class="status-dot"></span> Wattenwyl · persönlicher Platzhalter</p>
+            <h1 class="title">Vorerst nur<br><span>ein Platzhalter.</span></h1>
         </header>
         <main>
-            <p class="description">Hier entsteht in den nächsten Jahren eine Webseite.</p>
-            <div class="shapes">
-                <div class="shape circle"></div>
-                <div class="shape square"></div>
-                <div class="shape triangle"></div>
+            <p class="description">Aktuell ist hier kein konkretes Vorhaben geplant.<br>Ob sich das ändert, ist offen – es kann noch lange dauern.</p>
+            <div class="shapes" aria-label="Kleine Überraschung">
+                <button class="shape circle" type="button" aria-label="Kreis"></button>
+                <button class="shape square" type="button" aria-label="Quadrat"></button>
+                <button class="shape triangle" type="button" aria-label="Dreieck"></button>
             </div>
-            <button id="contact-btn" class="btn">Kontakt</button>
-            <button id="credits-btn" class="btn">Credits</button>
+            <div class="actions">
+                <button id="credits-btn" class="btn btn-secondary" type="button">Über diese Seite</button>
+                <button id="contact-btn" class="btn btn-secondary" type="button">Kontakt</button>
+            </div>
         </main>
+        <footer class="site-footer">
+            <span>Persönliche Platzhalterseite</span>
+            <button id="privacy-btn" class="footer-link" type="button">Datenschutz</button>
+            <span class="footer-mark">W.</span>
+        </footer>
     </div>
-    <div id="popup" class="popup">
-        <div class="popup-content">
-            <span class="close"></span>
-            <a href="mailto:kontakt-wattenwyl@outlook.com" class="emailAdress">kontakt-wattenwyl@outlook.com</a>
-        </div>
+    <div id="popup" class="popup" aria-hidden="true">
+        <section class="popup-content" role="dialog" aria-modal="true" aria-labelledby="contact-title">
+            <button class="close" type="button" aria-label="Schliessen"></button>
+            <p class="modal-eyebrow">Kontakt</p>
+            <h2 id="contact-title">E-Mail</h2>
+            <a id="email-link" class="emailAdress">E-Mail-Adresse anzeigen</a>
+            <p class="modal-note">Für allgemeine Rückfragen zu dieser Webseite.</p>
+        </section>
     </div>
-    <div id="credits-popup" class="popup">
-        <div class="popup-content">
-            <span class="close"></span>
-            <h2>Credits</h2>
-            <p>Design erstellt mit Hilfe eines KI-Assistenten.</p>
-            <p>Konfetti-Animation: <a href="https://github.com/catdad/canvas-confetti" target="_blank">canvas-confetti</a></p>
-            <p>Schriftart: Roboto von <a href="https://fonts.google.com/specimen/Roboto" target="_blank">Google Fonts</a></p>
-            <p>Gehostet auf <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>. Source code verfügbar auf <a href="https://github.com/wattenwyl/wattenwyl.github.io/" target="_blank">GitHub</a>.</p>
-            <h2>Haftungsausschluss</h2>
-            <p>Die Informationen auf dieser Webseite dienen nur zu allgemeinen Informationszwecken. Alle Informationen werden in gutem Glauben bereitgestellt, jedoch übernehmen wir keine Gewähr für die Vollständigkeit, Zuverlässigkeit und Genauigkeit dieser Informationen. Jegliche Handlung, die Sie auf Grundlage der auf dieser Webseite gefundenen Informationen vornehmen, geschieht auf Ihr eigenes Risiko. Wir haften nicht für Verluste und/oder Schäden im Zusammenhang mit der Nutzung dieser Webseite.</p>
-        </div>
+    <div id="credits-popup" class="popup" aria-hidden="true">
+        <section class="popup-content credits-content" role="dialog" aria-modal="true" aria-labelledby="credits-title">
+            <button class="close" type="button" aria-label="Schliessen"></button>
+            <p class="modal-eyebrow">Ein kleiner Blick hinter die Kulissen</p>
+            <h2 id="credits-title">Über diese Seite</h2>
+            <p>Gestaltung mit Unterstützung eines KI-Assistenten.</p>
+            <p>Die Gestaltung und Animationen werden lokal im Browser ausgeführt.</p>
+            <p>Gehostet auf <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>. Quellcode auf <a href="https://github.com/wattenwyl/wattenwyl.github.io/" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+            <h2>Hinweis</h2>
+            <p>Die Inhalte dieser Seite dienen allgemeinen Informationszwecken. Es wird keine Gewähr für Vollständigkeit, Richtigkeit oder Aktualität übernommen.</p>
+        </section>
+    </div>
+    <div id="privacy-popup" class="popup" aria-hidden="true">
+        <section class="popup-content privacy-content" role="dialog" aria-modal="true" aria-labelledby="privacy-title">
+            <button class="close" type="button" aria-label="Schliessen"></button>
+            <p class="modal-eyebrow">Datenschutz</p>
+            <h2 id="privacy-title">Datenschutzhinweis</h2>
+            <h3>Verantwortlich und Kontakt</h3>
+            <p>Diese persönliche Platzhalterseite wird von ihrem alleinigen Inhaber und Betreiber geführt. Für Datenschutzanliegen ist er per E-Mail erreichbar:</p>
+            <button id="privacy-email-reveal" class="privacy-email-reveal" type="button">E-Mail-Adresse anzeigen</button>
+            <a id="privacy-email-link" class="emailAdress" hidden></a>
+            <h3>Hosting und Zugriffsdaten</h3>
+            <p>Diese Webseite wird mit GitHub Pages von GitHub, Inc. gehostet. Laut GitHub wird bei jedem Aufruf die IP-Adresse aus Sicherheitsgründen protokolliert. Dabei können auch technische Zugriffsdaten wie Zeitpunkt und angefragte Seite verarbeitet werden. GitHub hat seinen Sitz in den USA; eine Bearbeitung von Daten ausserhalb der Schweiz kann daher nicht ausgeschlossen werden. Weitere Informationen stehen in der <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">Datenschutzerklärung von GitHub</a>.</p>
+            <h3>Cookies und Analyse</h3>
+            <p>Diese Webseite setzt selbst keine Cookies und verwendet keine Analyse- oder Werbe-Tracker. Sie bindet keine externen Schriftarten oder Skripte ein. Deshalb wird kein Cookie-Banner verwendet. Die Auswahl zwischen 2016- und 2026-Ansicht gilt nur bis zum Neuladen und wird weder in Cookies noch in anderem Browserspeicher abgelegt.</p>
+            <h3>Kontakt per E-Mail</h3>
+            <p>Bei einer E-Mail-Anfrage werden die mitgeteilten Angaben zur Bearbeitung der Anfrage verwendet. E-Mails können unverschlüsselt übermittelt werden.</p>
+            <h3>Deine Rechte</h3>
+            <p>Im Rahmen des anwendbaren Datenschutzrechts können Auskunft, Berichtigung oder Löschung von Personendaten verlangt werden. Anfragen dazu können an die oben genannte E-Mail-Adresse gerichtet werden.</p>
+        </section>
     </div>
     <canvas id="confetti-canvas"></canvas>
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
     <script src="js/index.js"></script>
 </body>
 </html>

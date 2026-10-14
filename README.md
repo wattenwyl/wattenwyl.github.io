@@ -1,14 +1,13 @@
-# Placeholder Website
+# Wattenwyl – persönliche Platzhalterseite
 
-This repository contains the code for a placeholder website, designed to occupy an unused domain. The site features a simple, interactive design with animated elements and a playful user interface.
+This repository contains the code for a personal placeholder page. No specific website or project is currently planned.
 
 ## Technologies Used
 
 - HTML5
 - CSS3
 - JavaScript
-- [canvas-confetti](https://github.com/catdad/canvas-confetti) for confetti animations
-- [Google Fonts (Roboto)](https://fonts.google.com/specimen/Roboto) for the font
+- System fonts and locally implemented animations (no third-party assets loaded by the page)
 
 ## Structure
 
@@ -18,15 +17,18 @@ This repository contains the code for a placeholder website, designed to occupy 
 
 ## Usage
 
-This website serves as a temporary placeholder for an unused domain. It informs visitors that a website will be developed in the coming years while providing a visually appealing and interactive experience.
+The page is a simple personal placeholder with interactive shapes and locally rendered confetti. There is no planned launch date; it may remain a placeholder for a long time.
 
 ## Credits
 
 - Design created with the assistance of an AI
-- Confetti animation: [canvas-confetti](https://github.com/catdad/canvas-confetti)
-- Font: Roboto from [Google Fonts](https://fonts.google.com/specimen/Roboto)
+- Confetti animation: implemented locally in JavaScript
 - Hosted on [GitHub Pages](https://pages.github.com/)
 
 ## Contact
 
-[kontakt-wattenwyl@outlook.com](mailto:kontakt-wattenwyl@outlook.com)
+The contact button reveals the email address on the website.
+
+## Privacy
+
+The site does not set cookies or use analytics. It is hosted on GitHub Pages; GitHub states that visitor IP addresses are logged for security purposes. See the privacy notice on the site for details.
